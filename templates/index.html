@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Tracker</title>
+</head>
+<body>
+    <h1>Weather Tracker</h1>
+    <form method="GET" action="/">
+        <input type="text" name="city" placeholder="Enter city">
+        <button type="submit">Check Weather</button>
+    </form>
+    {% if weather %}
+    <p>Temperature: {{ weather.temp }}°C</p>
+    <p>Condition: {{ weather.desc }}</p>
+    {% endif %}
+</body>
+</html>
