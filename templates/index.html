@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Weather Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Weather Tracker</h1>
@@ -9,9 +10,12 @@
         <input type="text" name="city" placeholder="Enter city">
         <button type="submit">Check Weather</button>
     </form>
+
     {% if weather %}
-    <p>Temperature: {{ weather.temp }}°C</p>
-    <p>Condition: {{ weather.desc }}</p>
+        <p>Temperature: {{ weather.temp }}°C</p>
+        <p>Condition: {{ weather.desc }}</p>
+    {% elif error %}
+        <p style="color:red;">{{ error }}</p>
     {% endif %}
 </body>
 </html>
