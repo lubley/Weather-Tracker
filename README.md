@@ -1,9 +1,13 @@
 # Weather-Tracker
+
 A really simple weather tracking website with python and flask that allows users to search for a city and see the weather in real time using the OpenWeatherMap API!
 
 I created this project to practice backend web development and using API's
 
-#Features!
+---
+
+##Features!
+
 -Search for weather by the city name
 -Displays:
     -Current temperature in Celsius
@@ -12,11 +16,14 @@ I created this project to practice backend web development and using API's
 -Tried making a clean UI with CSS.
 -API key securely stored.
 
-#Future Improvements
--Add a button that turns the degrees from celsiu to fahrenheit
+---
+
+##Future Improvements
+
+-Add a button that turns the degrees from celsius to fahrenheit
 -Display some more weather data for example the humidity or UV or windspeed.
 -Add search history that stores past 5 cities entered (this somewhat works so far)
 
-#Author
+##Author
 Build by Amtul Lubna
 Beginner programmer.
